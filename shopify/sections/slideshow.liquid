@@ -170,9 +170,20 @@
           {%- endif -%}
         </div>
         <div class="slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll and forloop.index == 1 %} scroll-trigger animate--slide-in{% endif %}">
-          <div class="slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
+          <div
+            class="slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient">
+             {%- if block.settings.graphic != blank -%}
+               <div class="desktop_graphic">
+                 <img src="{{ block.settings.graphic | img_url: '500x' }}"{% if block.settings.heading != blank %} alt="{{ block.settings.heading | escape }}"{% endif %}>
+               </div>
+              {%- endif -%}
+              {%- if block.settings.mobile_graphic != blank -%}
+               <div class="mobilep_graphic">
+                 <img src="{{ block.settings.mobile_graphic | img_url: '500x' }}"{% if block.settings.heading != blank %} alt="{{ block.settings.heading | escape }}"{% endif %}>
+               </div>
+              {%- endif -%}
             {%- if block.settings.heading != blank -%}
-              <h2 class="banner__heading inline-richtext {{ block.settings.heading_size }}" data-index="{{ forloop.index }}">
+              <h2 class="banner__heading inline-richtext" data-index="{{ forloop.index }}">
                 {{ block.settings.heading }}
               </h2>
               <style>
@@ -221,6 +232,15 @@
                       color: {{ block.settings.button_color }};
                       border-bottom-color: {{ block.settings.button_color }};
                   }
+                #Slider-{{ section.id }} .slideshow__text .banner__buttons[data-index="{{ forloop.index }}"] a.button--secondary{
+                   color: {{ block.settings.button_color }};
+                   border: 2px solid {{ block.settings.button_color }};
+                   box-shadow:none;
+                }
+                #Slider-{{ section.id }} .slideshow__text .banner__buttons[data-index="{{ forloop.index }}"] a.button--secondary::before,
+                 #Slider-{{ section.id }} .slideshow__text .banner__buttons[data-index="{{ forloop.index }}"] a.button--secondary::after{
+                   box-shadow:none;
+                 }
               </style>
             {%- endif -%}
           </div>
@@ -451,30 +471,22 @@
           "label": "t:sections.slideshow.blocks.slide.settings.mobile_image.label"
         },
         {
+          "type": "image_picker",
+          "id": "graphic",
+          "label": "t:sections.slideshow.blocks.slide.settings.graphic.label",
+          "info": "t:sections.slideshow.blocks.slide.settings.graphic.info"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_graphic",
+          "label": "t:sections.slideshow.blocks.slide.settings.mobile_graphic.label",
+          "info": "t:sections.slideshow.blocks.slide.settings.graphic.info"
+        },
+        {
           "type": "inline_richtext",
           "id": "heading",
           "default": "Image slide",
           "label": "t:sections.slideshow.blocks.slide.settings.heading.label"
-        },
-        {
-          "type": "select",
-          "id": "heading_size",
-          "options": [
-            {
-              "value": "h2",
-              "label": "t:sections.all.heading_size.options__1.label"
-            },
-            {
-              "value": "h1",
-              "label": "t:sections.all.heading_size.options__2.label"
-            },
-            {
-              "value": "h0",
-              "label": "t:sections.all.heading_size.options__3.label"
-            }
-          ],
-          "default": "h1",
-          "label": "t:sections.all.heading_size.label"
         },
         {
           "type": "color",
@@ -624,26 +636,6 @@
           "default": true
         },
         {
-          "type": "select",
-          "id": "text_alignment",
-          "options": [
-            {
-              "value": "left",
-              "label": "t:sections.slideshow.blocks.slide.settings.text_alignment.option_1.label"
-            },
-            {
-              "value": "center",
-              "label": "t:sections.slideshow.blocks.slide.settings.text_alignment.option_2.label"
-            },
-            {
-              "value": "right",
-              "label": "t:sections.slideshow.blocks.slide.settings.text_alignment.option_3.label"
-            }
-          ],
-          "default": "center",
-          "label": "t:sections.slideshow.blocks.slide.settings.text_alignment.label"
-        },
-        {
           "type": "range",
           "id": "image_overlay_opacity",
           "min": 0,
@@ -658,30 +650,6 @@
           "id": "color_scheme",
           "label": "t:sections.all.colors.label",
           "default": "background-1"
-        },
-        {
-          "type": "header",
-          "content": "t:sections.slideshow.settings.mobile.content"
-        },
-        {
-          "type": "select",
-          "id": "text_alignment_mobile",
-          "options": [
-            {
-              "value": "left",
-              "label": "t:sections.slideshow.blocks.slide.settings.text_alignment_mobile.options__1.label"
-            },
-            {
-              "value": "center",
-              "label": "t:sections.slideshow.blocks.slide.settings.text_alignment_mobile.options__2.label"
-            },
-            {
-              "value": "right",
-              "label": "t:sections.slideshow.blocks.slide.settings.text_alignment_mobile.options__3.label"
-            }
-          ],
-          "default": "center",
-          "label": "t:sections.slideshow.blocks.slide.settings.text_alignment_mobile.label"
         }
       ]
     }
