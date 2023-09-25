@@ -137,10 +137,10 @@
               id="product-grid"
               data-id="{{ section.id }}"
               class="
-                                                grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
-                                                grid--{{ grid_count }}-col-tablet
-                                                grid--{{ grid_count }}-col-desktop
-                                              ">
+                                                                grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
+                                                                grid--{{ grid_count }}-col-tablet
+                                                                grid--{{ grid_count }}-col-desktop
+                                                              ">
               {%- for product in collection.products -%}
                 {% assign lazy_load = false %}
                 {%- if forloop.index > grid_count -%}
@@ -187,6 +187,9 @@
   {% if section.settings.image_shape == 'arch' %}
     {% render 'mask-arch' %}
   {%- endif -%}
+</div>
+<div class="scroll-sticky-section">
+  {% render 'scroll-top-sticky' %}
 </div>
 
 {% schema %}
