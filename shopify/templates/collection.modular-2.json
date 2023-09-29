@@ -1,36 +1,9 @@
 {
   "sections": {
-    "collection-header": {
-      "type": "collection-header",
-      "disabled": true,
-      "settings": {
-        "options_enable": true,
-        "filter_size_enable": true,
-        "filter_size": "30A,30B,30C,30D,30DD,32A,32B,32C,32D,32DD,32F,32G,34A,34B,34C,34D,34DD,34F,34G,36A,36B,36C,36D,36DD,36F,36G,38D,38DD,38F,38G,40B,40C,40D,40DD,40F,40G,OS,XS,S,s,M,L,XL,00,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14",
-        "filter_material_enable": false,
-        "filter_material": "silk,knit,cotton",
-        "filter_category_enable": false,
-        "filter_category_general": "bras,panties,bodysuits,accessories,menswear,garters & belts,hosiery,play,bags,robes,slips & dresses,lingerie,toys,lubricant,games & books,wellness,boxers,outerwear,sleepwear & lounge,swim,tops,bottoms",
-        "filter_category_bestsellers": "bras,panties,lingerie,robes,bodysuits,clothing,tops,bottoms,dresses & slips,sleepwear & lounge, swim, accessories, garters & belts",
-        "filter_category_tops": "camis & tanks,bustiers & bra tops,t-shirts & short sleeves,bodysuits,long sleeve",
-        "filter_category_bottoms": "shorts & skirts,pants,sleepwear & lounge,shorts & skirts",
-        "filter_category_swim": "one pieces,bikinis,beach bags,cover ups",
-        "filter_category_sleepwear": "tops,bottoms,dresses & slips,robes,boxers",
-        "filter_category_lingerie": "bras,panties,garters & belts,bodysuits,dresses & slips,accessories,menswear,robes",
-        "filter_category_pleasure": "lingerie,toys,accessories,lubricant,games & books",
-        "filter_category_clothing": "dresses & slips,tops,bottoms,knitwear,sleepwear,outerwear,bodysuits,jumpsuits & rompers",
-        "filter_category_essentials": "bras,panties,bodysuits,menswear,garters & belts,stockings,play,facemasks,bags,garters & hosiery,robes,dresses & slips,lingerie,toys,lubricant,games & books,wellness,boxers,outerwear,sleepwear & lounge,swim",
-        "filter_category_sale": "bras,panties,lingerie,robes,bodysuits,clothing,tops,bottoms,dresses & slips,sleepwear & lounge, swim, accessories, garters & belts",
-        "filter_type_enable": false,
-        "filter_type_bodysuits": "lace,ouvert & bondage,clothing,lingerie",
-        "filter_type_bras": "essentials,Underwire,lined,bralettes,bondage & peekaboo,bra tops,fuller cup,triangle,mastectomy,nursing, strapless",
-        "filter_type_panty": "essentials,thongs,cheekys & hiphuggers,ouvert,high waisted,garters & belts,hosiery"
-      }
-    },
     "banner": {
       "type": "main-collection-banner",
       "settings": {
-        "show_collection_description": false,
+        "show_collection_description": true,
         "show_collection_image": true,
         "heading_font_size": 32,
         "heading_font_size_mobile": 18,
@@ -83,12 +56,14 @@
       "type": "featured-collection",
       "settings": {
         "title": "",
+        "heading_link": "",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "bg-image",
+        "collection": "fleur-x-marilyn-monroe",
         "products_to_show": 8,
+        "products_to_offset": 0,
         "columns_desktop": 4,
         "full_width": true,
         "show_view_all": false,
@@ -146,7 +121,7 @@
             "text_style": "body",
             "body_font_size": 19,
             "body_font_size_mobile": 18,
-            "body_text_content_color": "#000",
+            "body_text_content_color": "#000000",
             "body_text_content_color_mobile": "#ffffff"
           }
         }
@@ -156,7 +131,9 @@
         "template--21079203217720__0223d392-5483-4560-b749-a0f073c17e74-text-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/marilyn_2_700x_crop_center_52674389-4343-4400-a481-95378face2be.webp",
+        "image": "shopify:\/\/shop_images\/marilyn_2.jpg",
+        "modular_section_link": "",
+        "modular_image_alt_text": "",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -175,12 +152,14 @@
       "type": "featured-collection",
       "settings": {
         "title": "",
+        "heading_link": "",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "banana",
+        "collection": "fleur-x-marilyn-monroe",
         "products_to_show": 12,
+        "products_to_offset": 8,
         "columns_desktop": 4,
         "full_width": true,
         "show_view_all": false,
@@ -219,7 +198,7 @@
             "text_style": "body",
             "body_font_size": 19,
             "body_font_size_mobile": 18,
-            "body_text_content_color": "#000",
+            "body_text_content_color": "#000000",
             "body_text_content_color_mobile": "#ffffff"
           }
         },
@@ -228,7 +207,9 @@
           "settings": {
             "caption": "— Fleur Founder, Jennifer Zuccarini",
             "text_style": "subtitle",
-            "text_size": "medium"
+            "text_size": "medium",
+            "caption_color": "#000000",
+            "caption_color_mobile": "#ffffff"
           }
         }
       },
@@ -238,7 +219,9 @@
         "d971888c-b1a1-4b75-9920-dce4d2f7de00"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/INSPO-IMAGE-2---new_700x_crop_center_fc4fa250-5fdc-442d-b6c9-4ed8040bd455.jpg",
+        "image": "shopify:\/\/shop_images\/INSPO-IMAGE-2---new.jpg",
+        "modular_section_link": "",
+        "modular_image_alt_text": "",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -257,12 +240,14 @@
       "type": "featured-collection",
       "settings": {
         "title": "",
+        "heading_link": "",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "bridal-looks",
-        "products_to_show": 8,
+        "collection": "fleur-x-marilyn-monroe",
+        "products_to_show": 36,
+        "products_to_offset": 20,
         "columns_desktop": 4,
         "full_width": false,
         "show_view_all": false,
@@ -317,8 +302,11 @@
         "template--21079203217720__2d0a32cf-80ab-425f-a720-201cc4995bfc-text-1",
         "4d08bd37-c4b8-4b2b-b79b-ac54176c4486"
       ],
+      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/marilyn_3_500x_crop_center_6bfed7bc-ddd9-4700-8390-138223f3c3f8.webp",
+        "image": "shopify:\/\/shop_images\/marilyn_3.jpg",
+        "modular_section_link": "",
+        "modular_image_alt_text": "",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -333,15 +321,88 @@
         "padding_bottom": 36
       }
     },
-    "collection-description": {
-      "type": "collection-description",
-      "disabled": true,
+    "0e78e884-9234-467f-b528-ae16145aa0ef": {
+      "type": "content-story",
+      "blocks": {
+        "template--14637202079816__0e78e884-9234-467f-b528-ae16145aa0ef-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "content_font_size": 19,
+            "content_font_size_mobile": 17,
+            "content_color": "#000000",
+            "content_color_mobile": "#000000"
+          }
+        },
+        "template--14637202079816__0e78e884-9234-467f-b528-ae16145aa0ef-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"If I’d observed all the rules, I’d never have got anywhere.\"<\/p>",
+            "text_style": "body",
+            "body_font_size": 19,
+            "body_font_size_mobile": 17,
+            "body_text_content_color": "#ffffff",
+            "body_text_content_color_mobile": "#ffffff"
+          }
+        },
+        "template--14637202079816__0e78e884-9234-467f-b528-ae16145aa0ef-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "598181a4-6505-4d0e-baea-4514cc318b63": {
+          "type": "logo_graphic",
+          "settings": {
+            "logo_graphic": "shopify:\/\/shop_images\/marilyn_logo_placeholder.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14637202079816__0e78e884-9234-467f-b528-ae16145aa0ef-heading-1",
+        "template--14637202079816__0e78e884-9234-467f-b528-ae16145aa0ef-text-1",
+        "template--14637202079816__0e78e884-9234-467f-b528-ae16145aa0ef-button-1",
+        "598181a4-6505-4d0e-baea-4514cc318b63"
+      ],
+      "settings": {
+        "graphic": "https:\/\/cdn.shopify.com\/s\/files\/1\/1312\/6537\/files\/BLACK_CONTENT_BLOCK_-_PLACEHOLDER_883b4ea9-e587-4ec7-ae9e-ee0e8c62e930.jpg?v=1695988601",
+        "graphic_large_enable": true,
+        "offset_layout_enable": false,
+        "expanded_layout_enable": true,
+        "single_column_enable": true,
+        "title": "test",
+        "copy": "test",
+        "action": "",
+        "link": "",
+        "action_2": "",
+        "link_2": "",
+        "top_border": false,
+        "image": "shopify:\/\/shop_images\/marilyn_3.jpg",
+        "video_enable": false,
+        "video_mp4": "",
+        "video_ogv": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "eac94419-1244-4775-8526-0d581d84bf7b": {
+      "type": "collection-description-modular",
       "settings": {
         "full_width": true,
         "collection_seo_title": false,
         "desktop_content_alignment": "left",
         "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
+        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36,
         "desktop_text_color": "#000000",
@@ -349,32 +410,13 @@
         "heading_size": "h2",
         "heading_font_size": 32,
         "heading_font_size_mobile": 32,
-        "content_font_size": 11,
-        "content_font_size_mobile": 11
-      }
-    },
-    "8ff15b7b-b2a4-4145-8a3e-6a04eca33592": {
-      "type": "collection-description-modular",
-      "settings": {
-        "full_width": true,
-        "collection_seo_title": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "padding_top": 16,
-        "padding_bottom": 68,
-        "desktop_text_color": "#000000",
-        "mobile_text_color": "#000000",
-        "heading_size": "h2",
-        "heading_font_size": 32,
-        "heading_font_size_mobile": 32,
-        "content_font_size": 11,
-        "content_font_size_mobile": 11
+        "content_font_size": 18,
+        "content_font_size_mobile": 18,
+        "bottom_border": false
       }
     }
   },
   "order": [
-    "collection-header",
     "banner",
     "572929f1-e743-4e3b-9a36-ce42f0f54011",
     "product-grid",
@@ -383,7 +425,7 @@
     "419872e4-f91f-400a-b04a-fd82e0305be0",
     "a17ef5f0-06c6-472b-a06c-c90ff24b46b9",
     "2d0a32cf-80ab-425f-a720-201cc4995bfc",
-    "collection-description",
-    "8ff15b7b-b2a4-4145-8a3e-6a04eca33592"
+    "0e78e884-9234-467f-b528-ae16145aa0ef",
+    "eac94419-1244-4775-8526-0d581d84bf7b"
   ]
 }
