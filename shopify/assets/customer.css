@@ -753,3 +753,143 @@ li[data-address] > h2 {
 .addresses form > div:nth-of-type(7) + div[id] {
   margin-top: 1.5rem;
 }
+
+/* login page UI corrections*/
+
+.login{
+  max-width: 86rem!important;
+  padding-top: 60px!important;
+}
+
+@media only screen and (max-width: 767px) {
+  .loginFormContainer {
+    max-width: 100%!important;
+    margin: 0 auto;
+    margin-top: -20px;
+  }
+  .login{
+    padding-right: 8px!important;
+    padding-left: 8px!important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .loginFormContainer {
+    max-width: 49%!important;
+    margin: 0 auto;
+    margin-top: -20px;
+  }
+}
+
+.authPageInput input {
+  outline: none!important;
+  box-shadow: none!important;
+  padding: 9.6px!important;
+}
+
+.mt-32px{
+  margin-top: 32px!important;
+}
+
+.authPageFieldLabel {
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+
+.login{
+  min-height: 600px;
+}
+
+.authPageSubmitBtn {
+  font-size: 12.8px!important;
+  font-weight: 600!important;
+  margin: 30px 0px!important;
+  padding: 15px 18px!important;
+  text-transform: uppercase;
+  min-width: auto!important;
+  min-height: auto!important;
+}
+
+.authPageSubmitBtn::after {
+  display: none!important;
+}
+
+.authPageSubmitBtn::before {
+  display: none!important;
+}
+
+.authPageSubmitBtn:hover {
+  color: #d4857b;
+}
+
+.marginLeftZero {
+  margin-left: 0px!important;
+}
+
+.authOptionLinks{
+  text-align: left!important;
+  margin-left: 0px!important;
+  font-size: 12.8px!important;
+  text-decoration: none!important;
+  color: #d4857b!important;
+  font-weight: 600;
+}
+
+.authOptionLinks:hover{
+  color: #000;
+}
+
+/* register page UI corrections*/
+
+.register{
+  max-width: 86rem!important;
+  margin-bottom: 56px!important;
+}
+
+@media only screen and (max-width: 767px) {
+  .register{
+    padding-right: 8px!important;
+    padding-left: 8px!important;
+  }
+}
+
+/* reset password UI change */
+
+.authOptionCancelLink {
+  text-align: left!important;
+  margin-left: 0px!important;
+  font-size: 12.8px!important;
+  text-decoration: none!important;
+  color: #000!important;
+  line-height: 1.15;
+  font-family: sans-serif!important;
+}
+
+.recoverTitle {
+  font-size: 13px;
+  letter-spacing: .4px;
+}
+
+@media only screen and (max-width: 767px) {
+  .recoverFormContainer {
+    max-width: 100%!important;
+    margin: 0 auto;
+    margin-top: -10px;
+  }
+  .recover{
+    padding-right: 8px!important;
+    padding-left: 8px!important;
+  }
+}
+
+.recover{
+  min-height: 600px;
+}
+
+@media only screen and (min-width: 768px) {
+  .recoverFormContainer {
+    max-width: 49%!important;
+    margin: 0 auto;
+    margin-top: -10px;
+  }
+}
