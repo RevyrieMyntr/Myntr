@@ -23,7 +23,7 @@
       <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7">
     </symbol>
   </svg>
-  <h1 class="lowercase">
+  <h1 class="lowercase authPageTitle">
     {{ 'customer.register.title' | t }}
   </h1>
   <div class="loginFormContainer">
@@ -35,7 +35,7 @@
           </svg>
           {{ 'templates.contact.form.error_heading' | t }}
         </h2>
-        <ul>
+        <ul class="authPageErrorsUL">
           {%- for field in form.errors -%}
             <li>
               {%- if field == 'form' -%}
@@ -65,7 +65,7 @@
           placeholder="{{ 'customer.register.first_name' | t }}"
         >      
       </div>
-      <label class="authPageFieldLabel mt-32px" for="RegisterForm-LastName">
+      <label class="authPageFieldLabel" for="RegisterForm-LastName">
         {{ 'customer.register.last_name' | t }}
       </label>
       <div class="authPageInput">
@@ -80,7 +80,7 @@
           placeholder="{{ 'customer.register.last_name' | t }}"
         >      
       </div>
-      <label class="authPageFieldLabel mt-32px" for="RegisterForm-email">
+      <label class="authPageFieldLabel" for="RegisterForm-email">
         {{ 'customer.register.email' | t }}
       </label>
       <div class="authPageInput">
@@ -90,6 +90,9 @@
           id="RegisterForm-email"
           {% if form.email %}
             value="{{ form.email }}"
+          {% endif %}
+          {% if form.errors contains 'email' %}
+            class="authPageFormErrorField"
           {% endif %}
           spellcheck="false"
           autocapitalize="off"
@@ -111,7 +114,7 @@
           {{ form.errors.messages.email }}.
         </span>
       {%- endif -%}
-      <label class="authPageFieldLabel mt-32px" for="RegisterForm-password">
+      <label class="authPageFieldLabel" for="RegisterForm-password">
         {{ 'customer.register.password' | t }}
       </label>
       <div class="authPageInput">
@@ -119,6 +122,9 @@
           type="password"
           name="customer[password]"
           id="RegisterForm-password"
+          {% if form.errors contains 'password' %}
+            class="authPageFormErrorField"
+          {% endif %}
           aria-required="true"
           {% if form.errors contains 'password' %}
             aria-invalid="true"
@@ -127,9 +133,9 @@
           placeholder="{{ 'customer.register.password' | t }}"
         >
       </div>
-      <label class="authPageFieldLabel mt-32px" for="RegisterForm-birthday">
+      <label class="authPageFieldLabel" for="RegisterForm-birthday">
         Birthday  
-        <i style="color: #a1a1a1;">optional</i>
+        <i style="color: #a1a1a1; text-transform: lowercase">optional</i>
       </label>
       <div class="authPageInput">
         <input
@@ -158,7 +164,7 @@
           {{ 'customer.register.submit' | t }}
         </button>
       </div>
-      <a class="authOptionLinks float-left" href="{{ routes.account_register_url }}">
+      <a class="authOptionLinks float-left" href="{{ routes.root_url }}">
         Return to Store
       </a>
     {%- endform -%}

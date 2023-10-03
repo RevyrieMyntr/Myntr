@@ -15,7 +15,7 @@
 {%- endstyle -%}
 
 <div class="customer login section-{{ section.id }}-padding">
-  <h1 id="recover" class="lowercase" tabindex="-1">
+  <h1 id="recover" class="lowercase authPageTitle" tabindex="-1">
     {{ 'customer.recover_password.title' | t }}
   </h1>
   <div class="recoverFormContainer">
@@ -69,7 +69,7 @@
     {%- endform -%}
   </div>
 
-  <h1 id="login" class="lowercase" tabindex="-1">
+  <h1 id="login" class="lowercase authPageTitle" tabindex="-1">
     {{ 'customer.login_page.title' | t }}
   </h1>
   <div class="loginFormContainer">
@@ -117,7 +117,7 @@
       </div>
 
       {%- if form.password_needed -%}
-        <label for="CustomerPassword" class="authPageFieldLabel mt-32px">
+        <label for="CustomerPassword" class="authPageFieldLabel">
           {{ 'customer.login_page.password' | t }}
         </label>
         <div class="authPageInput">

@@ -759,17 +759,38 @@ li[data-address] > h2 {
 .login{
   max-width: 86rem!important;
   padding-top: 60px!important;
+  min-height: 600px;
+}
+
+.authPageTitle{
+  font-size: 38.2px;
+}
+
+.form__message{
+  display: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .authPageTitle{
+    font-size: 35.2px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .authPageTitle{
+    font-size: 32px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .loginFormContainer {
     max-width: 100%!important;
     margin: 0 auto;
-    margin-top: -20px;
   }
   .login{
     padding-right: 8px!important;
     padding-left: 8px!important;
+    padding-top: 40px!important;
   }
 }
 
@@ -777,7 +798,6 @@ li[data-address] > h2 {
   .loginFormContainer {
     max-width: 49%!important;
     margin: 0 auto;
-    margin-top: -20px;
   }
 }
 
@@ -787,17 +807,11 @@ li[data-address] > h2 {
   padding: 9.6px!important;
 }
 
-.mt-32px{
-  margin-top: 32px!important;
-}
-
 .authPageFieldLabel {
   text-align: left;
-  letter-spacing: 0.5px;
-}
-
-.login{
-  min-height: 600px;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+  margin-top: 30px;
 }
 
 .authPageSubmitBtn {
@@ -850,6 +864,7 @@ li[data-address] > h2 {
   .register{
     padding-right: 8px!important;
     padding-left: 8px!important;
+    padding-top: 30px!important;
   }
 }
 
@@ -866,8 +881,9 @@ li[data-address] > h2 {
 }
 
 .recoverTitle {
-  font-size: 13px;
-  letter-spacing: .4px;
+  font-size: 13.6px;
+  letter-spacing: 0.4px;
+  color: #000;
 }
 
 @media only screen and (max-width: 767px) {
@@ -886,10 +902,59 @@ li[data-address] > h2 {
   min-height: 600px;
 }
 
+.loginFormContainer form, .recoverFormContainer form{
+  margin-top: 0px!important;
+}
+
 @media only screen and (min-width: 768px) {
   .recoverFormContainer {
     max-width: 49%!important;
     margin: 0 auto;
     margin-top: -10px;
+  }  
+}
+
+@media only screen and (max-width: 767px) {
+  .customer .errors {
+    margin-top: 15px;
   }
+}
+
+.authPageFormErrorField {
+  border-color: #ff4136;
+  background-color: #000;
+  color: #ff4136;
+}
+
+.customer .errors {
+  margin-top: 10px;
+}
+
+.customer .errors ul {
+  margin-bottom: 0px!important;
+  padding: 0px;
+}
+
+.authPageErrorsUL{
+  margin-top: 10px;
+  margin-bottom: 0px!important;
+  padding: 0px!important;
+}
+
+.authPageErrorsUL li {
+  font-size: 13.6px;
+  line-height: 1.3;
+  letter-spacing: 0px;
+}
+
+.authPageErrorsUL li a{
+  text-decoration: none;
+  font-size: 13.6px;
+  line-height: 1.3; 
+}
+
+.customer .errors ul li{
+  font-size: 13.6px;
+  line-height: 1.3;
+  letter-spacing: 0px;
 }
