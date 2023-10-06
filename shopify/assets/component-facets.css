@@ -1988,6 +1988,7 @@ input.mobile-facets__checkbox {
 
 .sort-parent .facet-checkbox span {
   font-size: 13px;
+  letter-spacing: 0.32px;
 }
 
 .sort-parent .facet-checkbox {
@@ -2214,4 +2215,14 @@ input.mobile-facets__checkbox {
   .facets-container-drawer .grid-switcher {
     display: none;
   }
+}
+
+/* facets edge padding override */
+.facets .facets__form {
+  padding: 0px 9px 0px 5px;
+}
+
+.facets .active-facets__button-remove:hover {
+  text-underline-offset: 0.1em!important;
+  text-decoration-thickness: 1px!important;
 }

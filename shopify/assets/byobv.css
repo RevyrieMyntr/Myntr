@@ -12,6 +12,34 @@
 	}
 }
 
+.build-your-kit-row .active-5 .contain-item-bundle, .build-your-kit-row .active-4 .contain-item-bundle {
+	margin: 5px 0px;
+}
+
+.build-your-kit .price-container .now {
+	font-weight: normal!important;
+}
+
+.show-details-modal .grid-config{
+	margin-bottom: 0px!important;
+}
+
+.show-details-modal .description p {
+	margin-top: 15px;
+}
+
+.show-details-modal .description p a{
+	color: #d4857b;
+    font-weight: 500;
+    text-decoration: none;
+    outline: none;
+}
+
+.show-details-modal .description p a:hover{
+	color: #000;
+    cursor: pointer;
+}
+
 .build-your-kit-row-column span h6 {
   margin-bottom: 5px;
   margin-top: 0px;
@@ -75,7 +103,7 @@
 .product ul li span.money{
   margin: 0px!important;
   float: none!important;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .product ul li span.price-discount{
@@ -362,13 +390,15 @@ min-height: initial;
 	 width: 50%;
 }
  .show-details-modal h6 {
-	 font-size: 24px;
-	 font-weight: 1000;
-	 line-height: 29px;
-	 text-align: center;
-	 letter-spacing: 0.3px;
-	 margin: 29px 0 17px;
-   color: #000;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 29px;
+	text-align: center;
+	letter-spacing: 0.3px;
+	margin: 29px 0 17px;
+	color: #000;
+	font-family: proxima-nova,Helvetica,Roboto,Arial,sans-serif!important;
+	text-transform: uppercase;
 }
  .show-details-modal .description {
 	 font-size: 16px;

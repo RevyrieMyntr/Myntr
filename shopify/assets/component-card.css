@@ -516,3 +516,19 @@
   width: 100%;
   position: relative;
 }
+
+/* card badge styles override */
+
+.card__badge span {
+  width: auto!important;
+  padding: 2px 5px!important;
+  min-width: 95px!important;
+  font-size: 13px!important;
+}
+
+@media screen and (max-width: 1023px) {
+  .card__badge span {
+    font-size: 10px!important;
+    min-width: 80px!important;
+  }
+}
